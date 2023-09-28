@@ -32,9 +32,26 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        
+    <!--link href="cities.css" rel="stylesheet" type="text/css"--->
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="cities.html">A Few Cities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="advanced.html">Advanced</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
         <header>
             <h1>Visit cities with Sai Teja Thatikonda</h1>
             </header>
@@ -72,5 +89,139 @@
                     this result is expected.
 
                 </p>
+                <!-- First div container -->
+                <div class="image-container">
+                    <img src="Helsinki.jpg" alt="Helsinki" class="img-fluid" width="400" height="400">
+                    <img src="Toronto.jpeg" alt="Paris" class="img-fluid" width="400" height="400">
+                    <img src="Tokyo.jpg" alt="Tokyo" class="img-fluid" width="400" height="400">
+                </div>
+                <!-- Second div container for thumbnails -->
+                <div class="thumbnail-container">
+                    <img src="Helsinki.jpg" alt="New York City" class="img-thumbnail" width="400" height="400">
+                    <img src="Toronto.jpeg" alt="Paris" class="img-thumbnail" width="400" height="400" >
+                    <img src="Tokyo.jpg" alt="Tokyo" class="img-thumbnail" width="400" height="400">
+                </div><br>
+
+                <table class="table table-primary  table-hover" style="padding-left: 10px;">
+                    <caption>Table contains Cities, Rivers, and Trees starts with Letters</caption>
+                    <thead>
+                      <tr class="table-success">
+                        <th scope="col">Letter</th>
+                        <th scope="col">City</th>
+                        <th scope="col">River</th>
+                        <th scope="col">Tree</th>
+                      </tr>
+                    </thead>
+                      <tr class="table-info">
+                        <th scope ="row">T</th>
+                        <td>Tokyo</td>
+                        <td>Thames</td>
+                        <td>Timber</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope = "row">H</th>
+                        <td>Helsinki</td>
+                        <td>Hudson</td>
+                        <td>Hardwood</td>
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">A</th>
+                        <td>Amsterdam</td>
+                        <td>Amazon</td>
+                        <td>Acacia</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <th scope="row">T</th>
+                        <td>Toronto</td>
+                        <td>Tigris</td>
+                        <td>Trunk</td>
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">I</th>
+                        <td>Istanbul</td>
+                        <td>Indus</td>
+                        <td>Incense</td>
+                      </tr>
+                      <tr "table-warning">
+                        <th scope="row">K</th>
+                        <td>Kathmandu</td>
+                        <td>Klamath Tirtha</td>
+                        <td>Knot</td>
+                      </tr>
+                  </table>
+
+                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar">
+                    <div class="btn-group me-2" role="group" aria-label="GroupNo1">
+                      <button type="button" class="btn btn-success">T</button>
+                      <button type="button" class="btn btn-success">H</button>
+                      <button type="button" class="btn btn-success">T</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="GroupNo2">
+                      <button type="button" class="btn btn-warning">A</button>
+                      <button type="button" class="btn btn-warning">I</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="GroupNo3">
+                      <button type="button" class="btn btn-danger">K</button>
+                    </div>
+                  </div><br>
+
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="basic.html">Basic</a>
+                        <a class="dropdown-item" href="advanced.html">Advanced</a>
+                    </div>
+                    <br><br><br><br><br>
+
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" placeholder="Enter your city">
+                        </div>          
+                        <div class="form-check">
+                          <label class="form-check-label" for="newsletter">Sign up for newsletters?</label>
+                          <input type="checkbox" class="form-check-input">
+                        </div><br>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                      </form>
+                      <br><br>
+
+
+
+                      <div class="row" style="padding-left: 20px;">
+                          <div class="card" style="width: 18rem;" >
+                            <img src="Helsinki.jpg" class="card-img-top" alt="Helsinki">
+                              <div class="card-body">
+                                <h4>Helsinki</h4>
+                                <p>Helsinki, Finland’s southern capital, sits on a peninsula in the Gulf of Finland. Its central avenue, Mannerheimintie, is flanked by institutions including the National Museum, tracing Finnish history from the Stone Age to the present.</p>
+                                <a href="https://en.wikipedia.org/wiki/Helsinki" class="btn btn-primary">More About</a>
+                            </div><br>
+                          </div>
+                            <div class="card" style="width: 18rem;">
+                              <img src="Tokyo.jpg" class="card-img-top" alt="Tokyo">
+                                <div class="card-body">
+                                  <h4>Tokyo</h4>
+                                  <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods.</p>
+                                  <a href="https://en.wikipedia.org/wiki/Tokyo" class="btn btn-primary">More Details</a>
+                            </div><br>
+                          </div>
+                            <div class="card" style="width: 18rem; height: auto;" >
+                              <img src="Toronto.jpeg" class="card-img-top" alt="Toronto">
+                                <div class="card-body">
+                                  <h4>Toronto</h4>
+                                  <p>Toronto, the capital of the province of Ontario, is a major Canadian city along Lake Ontario’s northwestern shore. It's a dynamic metropolis with a core of soaring skyscrapers, all dwarfed by the iconic, free-standing CN Tower.</p>
+                                  <a href="https://en.wikipedia.org/wiki/Toronto" class="btn btn-primary">More Details</a>
+                                </div>
+                          </div>
+                      </div>
+
+
+
         </body>
 </html>
